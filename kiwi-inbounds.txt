@@ -1,0 +1,140 @@
+{
+  "id": 2,
+  "userId": 0,
+  "up": 577349058,
+  "down": 9089166891,
+  "total": 0,
+  "remark": "🇫🇮Helsinki",
+  "enable": true,
+  "expiryTime": 0,
+  "listen": "",
+  "port": 10093,
+  "protocol": "shadowsocks",
+  "settings": "{\n  \"clients\": [\n    {\n      \"comment\": \"\",\n      \"email\": \"legacy\",\n      \"enable\": true,\n      \"expiryTime\": 0,\n      \"limitIp\": 0,\n      \"method\": \"aes-256-gcm\",\n      \"password\": \"Y3c2gxa9mg\",\n      \"reset\": 0,\n      \"subId\": \"5trk3x6wl0j1pv6o\",\n      \"tgId\": \"\",\n      \"totalGB\": 0\n    },\n    {\n      \"comment\": \"\",\n      \"email\": \"snflwr87983\",\n      \"enable\": true,\n      \"expiryTime\": 0,\n      \"limitIp\": 0,\n      \"method\": \"aes-256-gcm\",\n      \"password\": \"bGi8w1WnYarEqTlGkJxyNtQQVPpXkvUtG/9gcMnEYVM=\",\n      \"reset\": 0,\n      \"subId\": \"lh25koasyx7b9uqp\",\n      \"tgId\": \"\",\n      \"totalGB\": 0\n    },\n    {\n      \"comment\": \"\",\n      \"email\": \"hamoon75438\",\n      \"enable\": true,\n      \"expiryTime\": 0,\n      \"limitIp\": 0,\n      \"method\": \"aes-256-gcm\",\n      \"password\": \"ohOIbAs88eGUrpVPS/eKICTks8qmaLRNi7ayCZggV4o=\",\n      \"reset\": 0,\n      \"subId\": \"bxydrkz4st9hnuwu\",\n      \"tgId\": \"\",\n      \"totalGB\": 0\n    },\n    {\n      \"comment\": \"\",\n      \"email\": \"shahnaz38901\",\n      \"enable\": true,\n      \"expiryTime\": 0,\n      \"limitIp\": 0,\n      \"method\": \"aes-256-gcm\",\n      \"password\": \"R2vFi24DbJenldIN1g1ZNUH8o+v2vF2JYlZEq0GWnQ4=\",\n      \"reset\": 0,\n      \"subId\": \"xr0szrebwlprp3z3\",\n      \"tgId\": \"\",\n      \"totalGB\": 0\n    },\n    {\n      \"comment\": \"\",\n      \"email\": \"selenium19872\",\n      \"enable\": true,\n      \"expiryTime\": 0,\n      \"limitIp\": 0,\n      \"method\": \"aes-256-gcm\",\n      \"password\": \"HjnKBnBo0Y/Ts93GF4QakEkLFjsytlJogWhyxdhe7m4=\",\n      \"reset\": 0,\n      \"subId\": \"gflzvgcaj5fdu7hk\",\n      \"tgId\": \"\",\n      \"totalGB\": 0\n    },\n    {\n      \"comment\": \"\",\n      \"email\": \"pourmoeini07931\",\n      \"enable\": true,\n      \"expiryTime\": 0,\n      \"limitIp\": 0,\n      \"method\": \"aes-256-gcm\",\n      \"password\": \"1VPe0UNnInlUcAnZEgWioAQW+cz5qUOO0GmU6scsQwI=\",\n      \"reset\": 0,\n      \"subId\": \"wz9a7vm8pbo8z1lu\",\n      \"tgId\": \"\",\n      \"totalGB\": 0\n    },\n    {\n      \"comment\": \"\",\n      \"email\": \"kalantar98172\",\n      \"enable\": true,\n      \"expiryTime\": 0,\n      \"limitIp\": 0,\n      \"method\": \"aes-256-gcm\",\n      \"password\": \"I8HMxBwW9UqBx6RgJkqEbSaiOPSD0m+XnwL9+hb7khM=\",\n      \"reset\": 0,\n      \"subId\": \"ayq0p8tpclguraw1\",\n      \"tgId\": \"\",\n      \"totalGB\": 0\n    },\n    {\n      \"comment\": \"\",\n      \"email\": \"dolphin12397\",\n      \"enable\": true,\n      \"expiryTime\": 0,\n      \"limitIp\": 0,\n      \"method\": \"aes-256-gcm\",\n      \"password\": \"nm/h6fXD9x8lEpOmSQ4QJrK5zULMpiin/l9ogtluxbE=\",\n      \"reset\": 0,\n      \"subId\": \"pwbwbm1w4jrhl281\",\n      \"tgId\": \"\",\n      \"totalGB\": 0\n    },\n    {\n      \"comment\": \"\",\n      \"email\": \"goldy09183\",\n      \"enable\": true,\n      \"expiryTime\": 0,\n      \"limitIp\": 0,\n      \"method\": \"aes-256-gcm\",\n      \"password\": \"9NHdTD2v2kUKee//FDi2fpzrFNCQldoQeEAtRUb7joU=\",\n      \"reset\": 0,\n      \"subId\": \"31fj4iuf0hw3jdjw\",\n      \"tgId\": \"\",\n      \"totalGB\": 0\n    },\n    {\n      \"comment\": \"\",\n      \"email\": \"curio90813\",\n      \"enable\": true,\n      \"expiryTime\": 0,\n      \"limitIp\": 0,\n      \"method\": \"aes-256-gcm\",\n      \"password\": \"ajNNzFHHWZWpN7zHAKtbrqBEzv/a6u/dlYTN1hsAdnY=\",\n      \"reset\": 0,\n      \"subId\": \"kmbpk7myr6wqhsw4\",\n      \"tgId\": \"\",\n      \"totalGB\": 0\n    },\n    {\n      \"comment\": \"\",\n      \"email\": \"ttpsct81450\",\n      \"enable\": true,\n      \"expiryTime\": 0,\n      \"limitIp\": 0,\n      \"method\": \"aes-256-gcm\",\n      \"password\": \"xrT0/bxMyFxN/X7rhrPCYp+x/igGocInRosAFR0Vc5g=\",\n      \"reset\": 0,\n      \"subId\": \"fdce4ah2xikvjsb6\",\n      \"tgId\": \"\",\n      \"totalGB\": 0\n    }\n  ],\n  \"ivCheck\": false,\n  \"method\": \"aes-256-gcm\",\n  \"network\": \"tcp,udp\",\n  \"password\": \"xJatDCcpsapBkJb2Hdc3CWP/fv065KGLpJeN09TX7Jw=\"\n}",
+  "streamSettings": "{\n  \"network\": \"tcp\",\n  \"security\": \"none\",\n  \"externalProxy\": [],\n  \"tcpSettings\": {\n    \"acceptProxyProtocol\": false,\n    \"header\": {\n      \"type\": \"none\"\n    }\n  }\n}",
+  "tag": "inbound-10093",
+  "sniffing": "{\n  \"enabled\": false,\n  \"destOverride\": [\n    \"http\",\n    \"tls\",\n    \"quic\",\n    \"fakedns\"\n  ],\n  \"metadataOnly\": false,\n  \"routeOnly\": false\n}",
+  "clientStats": [
+    {
+      "id": 20,
+      "inboundId": 2,
+      "enable": true,
+      "email": "legacy",
+      "up": 485225037,
+      "down": 8942973597,
+      "expiryTime": 0,
+      "total": 0,
+      "reset": 0
+    },
+    {
+      "id": 21,
+      "inboundId": 2,
+      "enable": true,
+      "email": "snflwr87983",
+      "up": 0,
+      "down": 0,
+      "expiryTime": 0,
+      "total": 0,
+      "reset": 0
+    },
+    {
+      "id": 22,
+      "inboundId": 2,
+      "enable": true,
+      "email": "hamoon75438",
+      "up": 0,
+      "down": 0,
+      "expiryTime": 0,
+      "total": 0,
+      "reset": 0
+    },
+    {
+      "id": 23,
+      "inboundId": 2,
+      "enable": true,
+      "email": "shahnaz38901",
+      "up": 664391,
+      "down": 4838148,
+      "expiryTime": 0,
+      "total": 0,
+      "reset": 0
+    },
+    {
+      "id": 24,
+      "inboundId": 2,
+      "enable": true,
+      "email": "selenium19872",
+      "up": 38153,
+      "down": 105557,
+      "expiryTime": 0,
+      "total": 0,
+      "reset": 0
+    },
+    {
+      "id": 25,
+      "inboundId": 2,
+      "enable": true,
+      "email": "pourmoeini07931",
+      "up": 0,
+      "down": 0,
+      "expiryTime": 0,
+      "total": 0,
+      "reset": 0
+    },
+    {
+      "id": 26,
+      "inboundId": 2,
+      "enable": true,
+      "email": "kalantar98172",
+      "up": 0,
+      "down": 0,
+      "expiryTime": 0,
+      "total": 0,
+      "reset": 0
+    },
+    {
+      "id": 27,
+      "inboundId": 2,
+      "enable": true,
+      "email": "dolphin12397",
+      "up": 0,
+      "down": 0,
+      "expiryTime": 0,
+      "total": 0,
+      "reset": 0
+    },
+    {
+      "id": 28,
+      "inboundId": 2,
+      "enable": true,
+      "email": "goldy09183",
+      "up": 0,
+      "down": 0,
+      "expiryTime": 0,
+      "total": 0,
+      "reset": 0
+    },
+    {
+      "id": 29,
+      "inboundId": 2,
+      "enable": true,
+      "email": "curio90813",
+      "up": 3395356,
+      "down": 13949979,
+      "expiryTime": 0,
+      "total": 0,
+      "reset": 0
+    },
+    {
+      "id": 30,
+      "inboundId": 2,
+      "enable": true,
+      "email": "ttpsct81450",
+      "up": 0,
+      "down": 0,
+      "expiryTime": 0,
+      "total": 0,
+      "reset": 0
+    }
+  ]
+}
