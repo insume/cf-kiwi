@@ -5,22 +5,25 @@ export default {
     const queryParams = url.searchParams;
 
     const userKeys = {
-      "curio90813": "ss://YWVzLTI1Ni1nY206YWpOTnpGSEhXWldwTjd6SEFLdGJycUJFenYvYTZ1L2RsWVROMWhzQWRuWT0@SERVER_IP_PORT?type=tcp#🇫🇮Helsinki-curio90813",
-      "ttpsct81450": "ss://YWVzLTI1Ni1nY206eHJUMC9ieE15RnhOL1g3cmhyUENZcCt4L2lnR29jSW5Sb3NBRlIwVmM1Zz0@SERVER_IP_PORT?type=tcp#🇫🇮Helsinki-ttpsct81450",
-      "snflwr87983": "ss://YWVzLTI1Ni1nY206YkdpOHcxV25ZYXJFcVRsR2tKeHlOdFFRVlBwWGt2VXRHLzlnY01uRVlWTT0@SERVER_IP_PORT?type=tcp#🇫🇮Helsinki-snflwr87983",
-      "hamoon75438": "ss://YWVzLTI1Ni1nY206b2hPSWJBczg4ZUdVcnBWUFMvZUtJQ1RrczhxbWFMUk5pN2F5Q1pnZ1Y0bz0@SERVER_IP_PORT?type=tcp#🇫🇮Helsinki-hamoon75438",
-      "shahnaz38901": "ss://YWVzLTI1Ni1nY206UjJ2RmkyNERiSmVubGRJTjFnMVpOVUg4byt2MnZGMkpZbFpFcTBHV25RND0@SERVER_IP_PORT?type=tcp#🇫🇮Helsinki-shahnaz38901",
-      "selenium19872": "ss://YWVzLTI1Ni1nY206SGpuS0JuQm8wWS9UczkzR0Y0UWFrRWtMRmpzeXRsSm9nV2h5eGRoZTdtND0@SERVER_IP_PORT?type=tcp#🇫🇮Helsinki-selenium19872",
-      "pourmoeini0793": "ss://YWVzLTI1Ni1nY206MVZQZTBVTm5JbmxVY0FuWkVnV2lvQVFXK2N6NXFVT08wR21VNnNjc1F3ST0@SERVER_IP_PORT?type=tcp#🇫🇮Helsinki-pourmoeini07931",
-      "kalantar98172": "ss://YWVzLTI1Ni1nY206SThITXhCd1c5VXFCeDZSZ0prcUViU2FpT1BTRDBtK1hud0w5K2hiN2toTT0@SERVER_IP_PORT?type=tcp#🇫🇮Helsinki-kalantar98172",
-      "dolphin1239": "ss://YWVzLTI1Ni1nY206bm0vaDZmWEQ5eDhsRXBPbVNRNFFKcks1elVMTXBpaW4vbDlvZ3RsdXhiRT0@SERVER_IP_PORT?type=tcp#🇫🇮Helsinki-dolphin12397",
-      "goldy09183": "ss://YWVzLTI1Ni1nY206OU5IZFREMnYya1VLZWUvL0ZEaTJmcHpyRk5DUWxkb1FlRUF0UlViN2pvVT0@SERVER_IP_PORT?type=tcp#🇫🇮Helsinki-goldy09183",
+      "curio90813": "trojan://SoGES4N108@SERVER_IP_PORT?type=tcp&security=tls&fp=chrome&alpn=h3%2Ch2%2Chttp%2F1.1&allowInsecure=1&sni=cloudflare.com#💫New-curio90813",
+      "ttpsct81450": "trojan://XA9JovFf4o@SERVER_IP_PORT?type=tcp&security=tls&fp=chrome&alpn=h3%2Ch2%2Chttp%2F1.1&allowInsecure=1&sni=cloudflare.com#💫New-ttpsct81450",
+      "snflwr87983": "trojan://nscWDagNjT@SERVER_IP_PORT?type=tcp&security=tls&fp=chrome&alpn=h3%2Ch2%2Chttp%2F1.1&allowInsecure=1&sni=cloudflare.com#💫New-snflwr87983",
+      "hamoon75438": "trojan://lNW32YMokH@SERVER_IP_PORT?type=tcp&security=tls&fp=chrome&alpn=h3%2Ch2%2Chttp%2F1.1&allowInsecure=1&sni=cloudflare.com#💫New-hamoon75438",
+      "shahnaz38901": "trojan://ITsBfih6Fo@SERVER_IP_PORT?type=tcp&security=tls&fp=chrome&alpn=h3%2Ch2%2Chttp%2F1.1&allowInsecure=1&sni=cloudflare.com#💫New-shahnaz38901",
+      "selenium19872": "trojan://bWNbfBuY6X@SERVER_IP_PORT?type=tcp&security=tls&fp=chrome&alpn=h3%2Ch2%2Chttp%2F1.1&allowInsecure=1&sni=cloudflare.com#💫New-selenium19872",
+      "pourmoeini0793": "trojan://wEn5Dg6zSj@SERVER_IP_PORT?type=tcp&security=tls&fp=chrome&alpn=h3%2Ch2%2Chttp%2F1.1&allowInsecure=1&sni=cloudflare.com#💫New-pourmoeini0793",
+      "kalantar98172": "trojan://bJrl9jrM2n@SERVER_IP_PORT?type=tcp&security=tls&fp=chrome&alpn=h3%2Ch2%2Chttp%2F1.1&allowInsecure=1&sni=cloudflare.com#💫New-kalantar98172",
+      "dolphin1239": "trojan://7B4XWzmKSL@SERVER_IP_PORT?type=tcp&security=tls&fp=chrome&alpn=h3%2Ch2%2Chttp%2F1.1&allowInsecure=1&sni=cloudflare.com#💫New-dolphin1239",
+      "goldy09183": "trojan://druJexq2kO@SERVER_IP_PORT?type=tcp&security=tls&fp=chrome&alpn=h3%2Ch2%2Chttp%2F1.1&allowInsecure=1&sni=cloudflare.com#💫New-goldy09183",
     };
 
     if (userKeys[path]) {
       const originalSsUrl = userKeys[path];
 
       if (queryParams.has('outline')) {
+
+        return new Response('Outline is currently not supported. Use V2ray.', { status: 400 });
+
         // Decode credentials and prepare JSON response only if 'outline' query is present
         const schemeEnd = originalSsUrl.indexOf('://') + 3;
         const atSign = originalSsUrl.indexOf('@');
