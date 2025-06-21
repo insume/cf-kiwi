@@ -4,4 +4,4 @@ compatibility_date = "2025-06-04"
 workers_dev = true
 
 [vars]
-SERVER_IP_PORT = "5.178.96.190:443"
+SERVER_IP_PORT = "217.60.37.177:443"

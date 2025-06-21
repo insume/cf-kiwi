@@ -5,16 +5,16 @@ export default {
     const queryParams = url.searchParams;
 
     const userKeys = {
-      "curio90813": "trojan://SoGES4N108@SERVER_IP_PORT?type=tcp&security=tls&fp=chrome&alpn=h3%2Ch2%2Chttp%2F1.1&allowInsecure=1&sni=cloudflare.com#💫New-curio90813",
-      "ttpsct81450": "trojan://XA9JovFf4o@SERVER_IP_PORT?type=tcp&security=tls&fp=chrome&alpn=h3%2Ch2%2Chttp%2F1.1&allowInsecure=1&sni=cloudflare.com#💫New-ttpsct81450",
-      "snflwr87983": "trojan://nscWDagNjT@SERVER_IP_PORT?type=tcp&security=tls&fp=chrome&alpn=h3%2Ch2%2Chttp%2F1.1&allowInsecure=1&sni=cloudflare.com#💫New-snflwr87983",
-      "hamoon75438": "trojan://lNW32YMokH@SERVER_IP_PORT?type=tcp&security=tls&fp=chrome&alpn=h3%2Ch2%2Chttp%2F1.1&allowInsecure=1&sni=cloudflare.com#💫New-hamoon75438",
-      "shahnaz38901": "trojan://ITsBfih6Fo@SERVER_IP_PORT?type=tcp&security=tls&fp=chrome&alpn=h3%2Ch2%2Chttp%2F1.1&allowInsecure=1&sni=cloudflare.com#💫New-shahnaz38901",
-      "selenium19872": "trojan://bWNbfBuY6X@SERVER_IP_PORT?type=tcp&security=tls&fp=chrome&alpn=h3%2Ch2%2Chttp%2F1.1&allowInsecure=1&sni=cloudflare.com#💫New-selenium19872",
-      "pourmoeini0793": "trojan://wEn5Dg6zSj@SERVER_IP_PORT?type=tcp&security=tls&fp=chrome&alpn=h3%2Ch2%2Chttp%2F1.1&allowInsecure=1&sni=cloudflare.com#💫New-pourmoeini0793",
-      "kalantar98172": "trojan://bJrl9jrM2n@SERVER_IP_PORT?type=tcp&security=tls&fp=chrome&alpn=h3%2Ch2%2Chttp%2F1.1&allowInsecure=1&sni=cloudflare.com#💫New-kalantar98172",
-      "dolphin1239": "trojan://7B4XWzmKSL@SERVER_IP_PORT?type=tcp&security=tls&fp=chrome&alpn=h3%2Ch2%2Chttp%2F1.1&allowInsecure=1&sni=cloudflare.com#💫New-dolphin1239",
-      "goldy09183": "trojan://druJexq2kO@SERVER_IP_PORT?type=tcp&security=tls&fp=chrome&alpn=h3%2Ch2%2Chttp%2F1.1&allowInsecure=1&sni=cloudflare.com#💫New-goldy09183",
+        "curio90813": "trojan://SoGES4N108@SERVER_IP_PORT?type=tcp&security=tls&fp=chrome&alpn=h3%2Ch2%2Chttp%2F1.1&allowInsecure=1&sni=cloudflare.com#SNI-curio90813",
+        "ttpsct81450": "trojan://XA9JovFf4o@SERVER_IP_PORT?type=tcp&security=tls&fp=chrome&alpn=h3%2Ch2%2Chttp%2F1.1&allowInsecure=1&sni=cloudflare.com#SNI-ttpsct81450",
+        "snflwr87983": "trojan://nscWDagNjT@SERVER_IP_PORT?type=tcp&security=tls&fp=chrome&alpn=h3%2Ch2%2Chttp%2F1.1&allowInsecure=1&sni=cloudflare.com#SNI-snflwr87983",
+        "hamoon75438": "trojan://lNW32YMokH@SERVER_IP_PORT?type=tcp&security=tls&fp=chrome&alpn=h3%2Ch2%2Chttp%2F1.1&allowInsecure=1&sni=cloudflare.com#SNI-hamoon75438",
+        "shahnaz38901": "trojan://ITsBfih6Fo@SERVER_IP_PORT?type=tcp&security=tls&fp=chrome&alpn=h3%2Ch2%2Chttp%2F1.1&allowInsecure=1&sni=cloudflare.com#SNI-shahnaz38901",
+        "selenium19872": "trojan://bWNbfBuY6X@SERVER_IP_PORT?type=tcp&security=tls&fp=chrome&alpn=h3%2Ch2%2Chttp%2F1.1&allowInsecure=1&sni=cloudflare.com#SNI-selenium19872",
+        "pourmoeini0793": "trojan://wEn5Dg6zSj@SERVER_IP_PORT?type=tcp&security=tls&fp=chrome&alpn=h3%2Ch2%2Chttp%2F1.1&allowInsecure=1&sni=cloudflare.com#SNI-pourmoeini0793",
+        "kalantar98172": "trojan://bJrl9jrM2n@SERVER_IP_PORT?type=tcp&security=tls&fp=chrome&alpn=h3%2Ch2%2Chttp%2F1.1&allowInsecure=1&sni=cloudflare.com#SNI-kalantar98172",
+        "dolphin1239": "trojan://7B4XWzmKSL@SERVER_IP_PORT?type=tcp&security=tls&fp=chrome&alpn=h3%2Ch2%2Chttp%2F1.1&allowInsecure=1&sni=cloudflare.com#SNI-dolphin1239",
+        "goldy09183": "trojan://druJexq2kO@SERVER_IP_PORT?type=tcp&security=tls&fp=chrome&alpn=h3%2Ch2%2Chttp%2F1.1&allowInsecure=1&sni=cloudflare.com#SNI-goldy09183",
     };
 
     if (userKeys[path]) {
