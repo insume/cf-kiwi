@@ -4,4 +4,5 @@ compatibility_date = "2025-06-04"
 workers_dev = true
 
 [vars]
-SERVER_IP_PORT = "217.60.37.177:443"
+# IP to config name mapping (this is now the sole source for IP addresses and their config names)
+IP_CONFIG_MAP = '{"31.56.206.129:444": "🥝Kiwi—🇫🇮Fin/TEST"}'

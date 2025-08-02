@@ -4,95 +4,72 @@ export default {
     const path = url.pathname.replace(/^\//, '');
     const queryParams = url.searchParams;
 
-    const userKeys = {
-        "curio90813": "trojan://SoGES4N108@SERVER_IP_PORT?type=tcp&security=tls&fp=chrome&alpn=h3%2Ch2%2Chttp%2F1.1&allowInsecure=1&sni=cloudflare.com#SNI-curio90813",
-        "ttpsct81450": "trojan://XA9JovFf4o@SERVER_IP_PORT?type=tcp&security=tls&fp=chrome&alpn=h3%2Ch2%2Chttp%2F1.1&allowInsecure=1&sni=cloudflare.com#SNI-ttpsct81450",
-        "snflwr87983": "trojan://nscWDagNjT@SERVER_IP_PORT?type=tcp&security=tls&fp=chrome&alpn=h3%2Ch2%2Chttp%2F1.1&allowInsecure=1&sni=cloudflare.com#SNI-snflwr87983",
-        "hamoon75438": "trojan://lNW32YMokH@SERVER_IP_PORT?type=tcp&security=tls&fp=chrome&alpn=h3%2Ch2%2Chttp%2F1.1&allowInsecure=1&sni=cloudflare.com#SNI-hamoon75438",
-        "shahnaz38901": "trojan://ITsBfih6Fo@SERVER_IP_PORT?type=tcp&security=tls&fp=chrome&alpn=h3%2Ch2%2Chttp%2F1.1&allowInsecure=1&sni=cloudflare.com#SNI-shahnaz38901",
-        "selenium19872": "trojan://bWNbfBuY6X@SERVER_IP_PORT?type=tcp&security=tls&fp=chrome&alpn=h3%2Ch2%2Chttp%2F1.1&allowInsecure=1&sni=cloudflare.com#SNI-selenium19872",
-        "pourmoeini0793": "trojan://wEn5Dg6zSj@SERVER_IP_PORT?type=tcp&security=tls&fp=chrome&alpn=h3%2Ch2%2Chttp%2F1.1&allowInsecure=1&sni=cloudflare.com#SNI-pourmoeini0793",
-        "kalantar98172": "trojan://bJrl9jrM2n@SERVER_IP_PORT?type=tcp&security=tls&fp=chrome&alpn=h3%2Ch2%2Chttp%2F1.1&allowInsecure=1&sni=cloudflare.com#SNI-kalantar98172",
-        "dolphin1239": "trojan://7B4XWzmKSL@SERVER_IP_PORT?type=tcp&security=tls&fp=chrome&alpn=h3%2Ch2%2Chttp%2F1.1&allowInsecure=1&sni=cloudflare.com#SNI-dolphin1239",
-        "goldy09183": "trojan://druJexq2kO@SERVER_IP_PORT?type=tcp&security=tls&fp=chrome&alpn=h3%2Ch2%2Chttp%2F1.1&allowInsecure=1&sni=cloudflare.com#SNI-goldy09183",
+    // Define user data with usernames and UUIDs
+    const userData = {
+        "curio90813": "3282bb55-3649-4e57-bab8-368213dcb20d",
+        "ttpsct81450": "29db8ca5-2234-4030-90b5-c443f68c7e06",
+        "snflwr87983": "4f2354d2-6b4a-462c-94af-7e91380b137a",
+        "hamoon75438": "0532531c-6115-4f3a-9e57-f2932caf3387",
+        "shahnaz38901": "10925388-d262-43b8-bb45-482abbcb4a44",
+        "selenium19872": "04d90bae-a4e1-4e73-9fb9-b5482f3f0a4a",
+        "pourmoeini0793": "f7799534-7f8e-4073-9b7d-b36604b01ddd",
+        "kalantar98172": "01bc6717-32a8-4bf7-8618-738c1bbbbedb",
+        "dolphin1239": "63c6b203-926e-481d-9f77-f7912fbe335b",
+        "goldy09183": "c11c7c12-1ed9-434c-ba8f-166bacde5def",
     };
+
+    // Generate userKeys programmatically
+    const userKeys = {};
+    for (const [userName, uuid] of Object.entries(userData)) {
+      userKeys[userName] = `vless://${uuid}@SERVER_IP_PORT/?type=tcp&security=reality&pbk=gssdPZcy1WmoSMmH62oUHoIKAcBpSVdZnHzZvfWZq1c&fp=chrome&sni=opensuse.org&sid=8adcc665&spx=%2F#Kiwi:${userName}`;
+    }
 
     if (userKeys[path]) {
       const originalSsUrl = userKeys[path];
 
-      if (queryParams.has('outline')) {
-
-        return new Response('Outline is currently not supported. Use V2ray.', { status: 400 });
-
-        // Decode credentials and prepare JSON response only if 'outline' query is present
-        const schemeEnd = originalSsUrl.indexOf('://') + 3;
-        const atSign = originalSsUrl.indexOf('@');
-
-        if (schemeEnd === 2 || atSign === -1 || atSign <= schemeEnd) { // schemeEnd === 2 means indexOf('://') was -1
-          console.error(`Malformed ss URI in config for path: ${path}, URI: ${originalSsUrl}`);
-          return new Response('Internal Server Error: Malformed ss URI in configuration.', { status: 500 });
-        }
-        const encodedCredentialsWithMethod = originalSsUrl.substring(schemeEnd, atSign);
-
-        let decodedCredentials;
-        try {
-          decodedCredentials = atob(encodedCredentialsWithMethod); // This will be "method:password"
-        } catch (e) {
-          console.error(`Failed to decode credentials for path: ${path}, encoded: ${encodedCredentialsWithMethod}, error: ${e.message}`);
-          return new Response('Internal Server Error: Failed to decode credentials.', { status: 500 });
-        }
-
-        const parts = decodedCredentials.split(':', 2); // Split into method and password
-        if (parts.length !== 2 || !parts[0] || !parts[1]) {
-          console.error(`Invalid decoded credentials format for path: ${path}, decoded: ${decodedCredentials}`);
-          return new Response('Internal Server Error: Invalid decoded credentials format.', { status: 500 });
-        }
-        const method = parts[0];
-        const password = parts[1];
-        
-        if (!env.SERVER_IP_PORT || typeof env.SERVER_IP_PORT !== 'string') {
-          console.error('SERVER_IP_PORT environment variable is not set or not a string.');
-          return new Response('Internal Server Error: Server configuration missing.', { status: 500 });
-        }
-
-        const serverIpPortParts = env.SERVER_IP_PORT.split(':');
-        if (serverIpPortParts.length !== 2) {
-          console.error(`Invalid SERVER_IP_PORT format: ${env.SERVER_IP_PORT}`);
-          return new Response('Internal Server Error: Invalid server connection details format.', { status: 500 });
-        }
-        const serverIp = serverIpPortParts[0];
-        const serverPortStr = serverIpPortParts[1];
-        const serverPort = parseInt(serverPortStr, 10);
-
-        if (!serverIp || isNaN(serverPort)) {
-          console.error(`Invalid SERVER_IP_PORT components: IP=${serverIp}, PortStr=${serverPortStr}`);
-          return new Response('Internal Server Error: Invalid server connection details.', { status: 500 });
-        }
-
-        const outlineResponse = {
-          server: serverIp,
-          server_port: serverPort,
-          password: password,
-          method: method,
-        };
-        return new Response(JSON.stringify(outlineResponse), {
-          status: 200,
-          headers: { 'Content-Type': 'application/json' },
-        });
-
-      } else {
-        // No 'outline' query: resolve SERVER_IP_PORT and return original string (no decoding)
-        if (!env.SERVER_IP_PORT || typeof env.SERVER_IP_PORT !== 'string') {
-          console.error('SERVER_IP_PORT environment variable is not set or not a string.');
-          return new Response('Internal Server Error: Server configuration missing.', { status: 500 });
-        }
-        if (!originalSsUrl.includes('SERVER_IP_PORT')) {
-            console.error(`Placeholder SERVER_IP_PORT not found in ss URI for path: ${path}, URI: ${originalSsUrl}`);
-            return new Response('Internal Server Error: Configuration error in ss URI (placeholder missing).', { status: 500 });
-        }
-        const keyWithIp = originalSsUrl.replace('SERVER_IP_PORT', env.SERVER_IP_PORT);
-        return new Response(keyWithIp, { status: 200, headers: { 'Content-Type': 'text/plain' } });
+      // Check if IP_CONFIG_MAP is properly configured
+      let ipConfigMap = {};
+      try {
+        ipConfigMap = JSON.parse(env.IP_CONFIG_MAP || '{}');
+      } catch (e) {
+        console.error('Failed to parse IP_CONFIG_MAP:', e);
+        return new Response('Internal Server Error: Server configuration invalid.', { status: 500 });
       }
+
+      // Get server list from IP_CONFIG_MAP keys
+      const serverList = Object.keys(ipConfigMap);
+      
+      if (serverList.length === 0) {
+        console.error('No servers found in IP_CONFIG_MAP.');
+        return new Response('Internal Server Error: No servers configured.', { status: 500 });
+      }
+
+      // Generate a configuration for each server IP with IP-specific config names
+      const configs = serverList.map(server => {
+        if (!originalSsUrl.includes('SERVER_IP_PORT')) {
+          console.error(`Placeholder SERVER_IP_PORT not found in ss URI for path: ${path}, URI: ${originalSsUrl}`);
+          return null;
+        }
+        
+        // Get the config name for this IP, or use a default
+        const configName = ipConfigMap[server] || `Kiwi-${server}`;
+        
+        // Replace SERVER_IP_PORT and update the config name in the fragment
+        let config = originalSsUrl.replace('SERVER_IP_PORT', server);
+        
+        // Update the fragment identifier with IP-specific config name and username
+        const fragmentIndex = config.lastIndexOf('#');
+        if (fragmentIndex !== -1) {
+          const baseConfig = config.substring(0, fragmentIndex + 1);
+          config = `${baseConfig}${encodeURIComponent(`${configName}:${path}`)}`;
+        }
+        
+        return config;
+      }).filter(config => config !== null);
+
+      // Join all configurations with new lines
+      const allConfigs = configs.join('\n');
+      return new Response(allConfigs, { status: 200, headers: { 'Content-Type': 'text/plain' } });
     } else {
       return new Response('Forbidden', { status: 403 });
     }
